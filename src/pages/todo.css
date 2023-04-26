@@ -1,0 +1,71 @@
+#todoPage {
+  width: 100%;
+  height: 100vh;
+  background-color: red;
+  background: #3a7bd5;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #3a6073, #3a7bd5);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #3a6073, #3a7bd5);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* padding-bottom: 5rem; */
+}
+
+.todoPageContainer {
+  width: 50%;
+  margin: auto;
+  padding: 2rem 1rem;
+  backdrop-filter: blur(2000px);
+  border: 1px dashed rgb(137, 162, 212);
+}
+.todoInputBox {
+  width: 80%;
+  margin: auto;
+  margin-top: 2rem;
+  position: relative;
+}
+.todoInputBox input {
+  width: 100%;
+  padding: 0.7rem 2rem;
+  border-radius: 1rem;
+  background-color: transparent;
+  border: 2px solid white;
+  font-size: 1.5rem;
+}
+.todoInputBox input:focus {
+  outline: none;
+}
+.todoInputBox input::placeholder {
+  color: white;
+}
+.todoInputBox button {
+  border-radius: 2rem;
+  position: absolute;
+  right: 2rem;
+  top: 0.9rem;
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
+  color: white;
+}
+.todoContainer {
+  width: 80%;
+  margin: auto;
+  margin-top: 2rem;
+}
+.todoContainer .alert {
+  background-color: transparent;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+  border-width: 2px;
+  border-color: white;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.completedTodo {
+  background-color: rgba(97, 110, 97, 0.648) !important;
+}
+.pendingTodo {
+  background-color: transparent !important;
+}
